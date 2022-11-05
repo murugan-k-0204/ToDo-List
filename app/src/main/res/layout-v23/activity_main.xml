@@ -113,10 +113,13 @@
                     android:elevation="12dp"
                     android:id="@+id/adder"
                     app:cardBackgroundColor="@color/code_blue"
+                    android:contentDescription="code"
                     android:layout_marginVertical="25dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="10dp"
-                    app:cardCornerRadius="50dp">
+                    android:onClick="addTask"
+                    app:cardCornerRadius="50dp"
+                    tools:ignore="HardcodedText,UsingOnClickInXml">
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
@@ -132,9 +135,12 @@
                     android:layout_height="50dp"
                     android:elevation="12dp"
                     app:cardBackgroundColor="@color/study_pink"
+                    android:contentDescription="study"
                     android:layout_marginHorizontal="10dp"
                     android:layout_marginVertical="25dp"
-                    app:cardCornerRadius="50dp">
+                    app:cardCornerRadius="50dp"
+                    android:onClick="addTask"
+                    tools:ignore="HardcodedText,UsingOnClickInXml">
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
@@ -148,11 +154,14 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
+                    android:contentDescription="app"
                     android:elevation="12dp"
                     android:layout_marginHorizontal="10dp"
                     android:layout_marginVertical="25dp"
+                    android:onClick="addTask"
                     app:cardBackgroundColor="@color/app_yellow"
-                    app:cardCornerRadius="50dp">
+                    app:cardCornerRadius="50dp"
+                    tools:ignore="HardcodedText,UsingOnClickInXml">
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
@@ -169,8 +178,11 @@
                     android:elevation="12dp"
                     android:layout_marginHorizontal="10dp"
                     android:layout_marginVertical="25dp"
+                    android:contentDescription="exercise"
+                    android:onClick="addTask"
                     app:cardBackgroundColor="@color/exercise_green"
-                    app:cardCornerRadius="50dp">
+                    app:cardCornerRadius="50dp"
+                    tools:ignore="HardcodedText,UsingOnClickInXml">
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
@@ -185,10 +197,13 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:elevation="12dp"
+                    android:onClick="addTask"
                     android:layout_marginHorizontal="10dp"
                     android:layout_marginVertical="25dp"
                     app:cardBackgroundColor="@color/song_red"
-                    app:cardCornerRadius="50dp">
+                    android:contentDescription="music"
+                    app:cardCornerRadius="50dp"
+                    tools:ignore="HardcodedText,UsingOnClickInXml">
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
@@ -203,10 +218,13 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:elevation="12dp"
+                    android:onClick="addTask"
                     android:layout_marginHorizontal="10dp"
                     android:layout_marginVertical="25dp"
+                    android:contentDescription="food"
                     app:cardBackgroundColor="@color/food_darkblue"
-                    app:cardCornerRadius="50dp">
+                    app:cardCornerRadius="50dp"
+                    tools:ignore="HardcodedText,UsingOnClickInXml">
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
@@ -240,46 +258,6 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/taskViewArea"
                 android:orientation="vertical">
-
-                <RelativeLayout
-
-                    android:layout_width="match_parent"
-                    android:layout_height="75dp"
-                    tools:ignore="UselessParent">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="70dp"
-                        android:id="@+id/task"
-                        android:layout_marginTop="5dp"
-                        android:textStyle="bold"
-                        android:text="Reading"
-                        android:textSize="30sp"
-                        android:background="@color/white"
-                        tools:ignore="HardcodedText" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="an hour"
-                        android:textSize="20sp"
-                        android:layout_marginTop="-5dp"
-                        android:layout_alignStart="@+id/task"
-                        android:layout_below="@+id/task"
-                        android:id="@+id/taskDescription"
-                        tools:ignore="HardcodedText" />
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="20dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:padding="10dp"
-
-                        android:src="@drawable/ic_baseline_star_24"
-                        android:tint="#656468"
-                        tools:ignore="HardcodedText,UseAppTint"
-                        android:contentDescription="star" />
-                </RelativeLayout>
             </LinearLayout>
         </ScrollView>
 
